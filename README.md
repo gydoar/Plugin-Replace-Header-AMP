@@ -8,7 +8,11 @@
 
 #### Overview
 
-![](https://i.imgur.com/wD6uzkw.gif)
+**Images**
+
+![](https://imgur.com/mOjGNqS.png | width=20) 
+
+![](https://imgur.com/Vsps6JB.png)
 
 This WordPress Plugin works together with the [AMP plugin](https://es.wordpress.org/plugins/amp/ "AMP plugin") so it is necessary to have it installed for it to work, and it provides an optimal solution to the **AMP Reader mode** with the **AMP Legacy template** adding a responsive logo and menu.
 
