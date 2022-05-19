@@ -1,6 +1,10 @@
 ### WordPress Plugin: Replace Header AMP
 
-[TOC]
+
+- [Overview][#Overview]
+- [Requirements][#Requirements]
+- [Instalation][#Instalation]
+- [Plugin directory][#Plugin-directory]
 
 #### Overview
 
@@ -35,3 +39,8 @@ This WordPress Plugin works together with the [AMP plugin](https://es.wordpress.
             logo.png/
 	admin/
 	includes/
+
+[#Overview]: #Overview
+[#Requirements]: #Requirements "Requirements"
+[#Instalation]: #Instalation "Instalation"
+[#Plugin-directory]: #Plugin-directory "Plugin directory"
