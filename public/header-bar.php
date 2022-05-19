@@ -13,8 +13,8 @@
     <div class="amp-menu">
         <a href="<?php echo esc_url($this->get('home_url')); ?>">
             <span class="amp-site-title">
+                <!-- Replace for a custom logo -->
                 <img src="<?php echo plugins_url('/img/logo.png', __FILE__) ?>" alt="<?php echo esc_html(wptexturize($this->get('blog_name'))); ?>">
-
             </span>
         </a>
         <!-- Replace for menu -->
@@ -37,7 +37,6 @@
 <?php if (has_nav_menu(NAV_MENU_LOCATION)) : ?>
     <?php
     printf(
-
         '<amp-sidebar id="navMenu" layout="nodisplay" side="%s">%s</amp-sidebar>',
         esc_attr(is_rtl() ? 'left' : 'right'),
         wp_nav_menu(

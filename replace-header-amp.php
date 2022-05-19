@@ -17,5 +17,4 @@
  */
 
 define('HEADER_AMP', plugin_dir_path((__FILE__)));
-
 require_once HEADER_AMP . '/public/header-amp.php';

@@ -4,18 +4,7 @@
  * New Header Legacy AMP Template
  */
 
-const NAV_MENU_LOCATION = 'amp_reader_sidebar';
-
-// Register the nav menu location if not in Standard/Transitional modes.
-add_action(
-    'init',
-    function () {
-        if (!current_theme_supports('amp')) {
-            register_nav_menu(NAV_MENU_LOCATION, __('AMP Reader[mode] Menu sidebar', 'amp-reader-nav-menu'));
-        }
-    }
-);
-
+// Replace the file header-bar.php in the plugin AMP for our own file in the public folder
 add_filter(
     'amp_post_template_file',
     function ($template_file) {
@@ -25,6 +14,20 @@ add_filter(
         return $template_file;
     }
 );
+
+
+// Register the nav menu location if not in Standard/Transitional modes.
+
+const NAV_MENU_LOCATION = 'amp_reader_sidebar';
+add_action(
+    'init',
+    function () {
+        if (!current_theme_supports('amp')) {
+            register_nav_menu(NAV_MENU_LOCATION, __('AMP Reader[mode] Menu sidebar', 'amp-reader-nav-menu'));
+        }
+    }
+);
+
 
 add_filter(
     'amp_post_template_data',
@@ -39,8 +42,15 @@ add_filter(
     }
 );
 
+// Add aditional information in the Footer
+add_action(
+    'amp_post_template_footer',
+    function () {
+        //get_template_part('footer');
+    }
+);
 
-// Custom CSS
+// Add custom CSS
 add_action(
     'amp_post_template_css',
     function () {
@@ -60,6 +70,7 @@ add_action(
     }
     amp-sidebar{
     width:60%;
+    background-color:#ffffff;
     }
     button#toggleNavMenu {
     background: none;
@@ -74,7 +85,7 @@ add_action(
     }
 
     .nav-primary ul li a{
-    padding:20px 0px;
+    text-decoration:none;
     }
 <?php }
 );
