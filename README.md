@@ -10,7 +10,7 @@
 
 **Images**
 
-![](https://imgur.com/mOjGNqS.png | width=20) 
+![](https://imgur.com/mOjGNqS.png) 
 
 ![](https://imgur.com/Vsps6JB.png)
 
